@@ -50,7 +50,7 @@ test_data/reads/SRR1972739_2.fastq.gz
 
 ```bash
 git clone https://github.com/vedikagarwal/workflow_exercise.git
-cd nextflow-genomics-workflow
+cd workflow_exercise/nextflow-genomics-workflow
 ```
 
 ### Run the workflow
