@@ -1,0 +1,6 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.000     1M / 13M   WARN    General                 (memory_limit.cpp          :  53)   Failed to limit memory to 250 Gb, setrlimit(2) call failed, errno = 22 (Invalid argument). Watch your memory consumption!
+ * 0:00:07.467    71M / 783M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 8
+ * 0:00:04.280    77M / 833M  WARN    General                 (kmer_coverage_model.cpp   : 219)   Too many erroneous kmers, the estimates might be unreliable
+======= Warnings saved to /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/warnings.log

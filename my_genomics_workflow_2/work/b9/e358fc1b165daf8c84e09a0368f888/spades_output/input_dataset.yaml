@@ -1,0 +1,7 @@
+- "left reads":
+  - "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/SRR1556289_1.trimmed.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/SRR1556289_2.trimmed.fastq.gz"
+  "type": "paired-end"

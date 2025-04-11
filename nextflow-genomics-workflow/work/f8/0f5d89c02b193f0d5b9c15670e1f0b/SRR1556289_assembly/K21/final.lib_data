@@ -1,0 +1,38 @@
+ù---
+max read length: 251
+nomerge max read length: 251
+average read length: 234.991
+average coverage: 25.9363
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/corrected/SRR1556289_R1.trimmed.fastq00.0_0.cor.fastq.gz'
+    right reads:
+      - '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/corrected/SRR1556289_R2.trimmed.fastq00.0_0.cor.fastq.gz'
+    single reads:
+      - '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/corrected/SRR1556289_R_unpaired00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 251
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/.bin_reads/INFO_0'
+        paired read prefix: '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/.bin_reads/paired_0'
+        merged read prefix: '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/.bin_reads/merged_0'
+        single read prefix: '/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b/SRR1556289_assembly/.bin_reads/single_0'
+        chunk num:       4
+      single reads mapped: false
+      library index:   0
+      number of reads: 353209
+      total nucleotides: 83000934
+...

@@ -1,0 +1,9 @@
+2025-04-11 14:22:12	1.6s	elegant_pauling	ERR	ce73de57ae0384b08f4bc907a9e3cd71	567a76ca-edd7-442a-8ec0-acd01180f89e	nextflow run main.nf -profile conda,test
+2025-04-11 14:25:34	-	lonely_swirles	-	896a8ec04fbcc122153aa12fa5fbd6d5	1f9bd5ad-da10-4880-b7d3-4a2eb5d36edf	nextflow run main.nf -profile conda,test
+2025-04-11 14:26:06	2.2s	lonely_boyd	ERR	896a8ec04fbcc122153aa12fa5fbd6d5	85d13568-1240-4fe1-a61d-59c3878fc1b2	nextflow run main.nf -profile conda,test
+2025-04-11 14:28:06	-	marvelous_roentgen	-	28f13e70935337936bb37074802f3eae	85d13568-1240-4fe1-a61d-59c3878fc1b2	nextflow run main.nf -profile conda,test -resume
+2025-04-11 14:28:33	28.9s	scruffy_varahamihira	ERR	28f13e70935337936bb37074802f3eae	c7018836-34c8-498f-9925-c6a3b46f323a	nextflow run main.nf -profile conda,test
+2025-04-11 14:32:17	25.4s	mighty_volhard	ERR	28f13e70935337936bb37074802f3eae	c6b467fb-ab44-47e4-88b3-3f0f604a0a86	nextflow run main.nf -profile conda,test
+2025-04-11 15:16:00	27.6s	high_curie	ERR	28f13e70935337936bb37074802f3eae	f28175ef-c14d-42b5-88f8-cdc6877f9eed	nextflow run main.nf -profile test,conda
+2025-04-11 15:17:54	-	sad_mcclintock	-	28f13e70935337936bb37074802f3eae	f5bdb600-f222-40de-a598-c9f4f9a3a000	nextflow run main.nf -profile test,conda
+2025-04-11 15:18:16	1m 57s	naughty_goodall	OK	28f13e70935337936bb37074802f3eae	80799ff4-e561-42cf-a8f3-e3c32228411a	nextflow run main.nf -profile test,conda

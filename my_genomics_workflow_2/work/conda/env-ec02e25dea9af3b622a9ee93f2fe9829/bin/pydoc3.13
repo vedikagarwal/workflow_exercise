@@ -1,0 +1,5 @@
+#!/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/python3.13
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

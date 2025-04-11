@@ -1,0 +1,7 @@
+"bwa": "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/spades-bwa"
+"dataset": "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "2"
+"output_dir": "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/tmp/corrector_s13cezs3"

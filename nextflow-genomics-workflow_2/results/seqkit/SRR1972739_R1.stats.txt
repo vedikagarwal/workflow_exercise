@@ -1,0 +1,2 @@
+file                            format  type  num_seqs     sum_len  min_len  avg_len  max_len   Q1   Q2   Q3  sum_gap  N50  N50_num  Q20(%)  Q30(%)  AvgQual  GC(%)  sum_n
+SRR1972739_R1.trimmed.fastq.gz  FASTQ   DNA    482,583  47,367,244       16     98.2      101  101  101  101        0  101        1   98.45   95.02    22.52  47.29  3,062

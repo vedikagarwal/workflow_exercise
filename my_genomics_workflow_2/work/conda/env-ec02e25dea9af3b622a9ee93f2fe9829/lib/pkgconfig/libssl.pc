@@ -1,0 +1,11 @@
+prefix=/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include 
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.5.0
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}

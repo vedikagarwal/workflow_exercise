@@ -1,0 +1,138 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_8vj1zjv5
+  output_files:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/corrected.yaml
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/share/spades
+  - --max_threads
+  - '4'
+  - --output_dir
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/spades-core
+  short_name: k55
+- STAGE: Copy files
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/share/spades/spades_pipeline/scripts/copy_files.py
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/before_rr.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/before_rr.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/assembly_graph_after_simplification.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/assembly_graph_after_simplification.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/final_contigs.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/contigs.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/first_pe_contigs.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/first_pe_contigs.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/strain_graph.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/strain_graph.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/scaffolds.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/scaffolds.fasta
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/scaffolds.paths
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/scaffolds.paths
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/assembly_graph_with_scaffolds.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/assembly_graph_with_scaffolds.gfa
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/assembly_graph.fastg
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/assembly_graph.fastg
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/K55/final_contigs.paths
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_dvyu4fj_
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/scaffolds.fasta
+  - --misc_dir
+  - /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

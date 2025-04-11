@@ -1,0 +1,9 @@
+- "left reads":
+  - "/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/SRR1972739_R1.trimmed.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/SRR1972739_R2.trimmed.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_assembly/corrected/SRR1972739_R_unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"

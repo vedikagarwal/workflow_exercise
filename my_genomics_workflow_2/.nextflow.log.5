@@ -1,0 +1,188 @@
+Apr-11 14:58:20.667 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile test,conda
+Apr-11 14:58:20.704 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.5
+Apr-11 14:58:20.715 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/vedikaagarwal/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.4
+Apr-11 14:58:20.731 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-11 14:58:20.731 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-11 14:58:20.733 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-11 14:58:20.738 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-11 14:58:20.748 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/nextflow.config
+Apr-11 14:58:20.749 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/nextflow.config
+Apr-11 14:58:20.763 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/vedikaagarwal/.nextflow/secrets/store.json
+Apr-11 14:58:20.765 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@48e7b3d2] - activable => nextflow.secret.LocalSecretsProvider@48e7b3d2
+Apr-11 14:58:20.767 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test,conda`
+Apr-11 14:58:20.982 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [test, conda]
+Apr-11 14:58:20.993 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-11 14:58:21.005 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [exotic_franklin] DSL2 - revision: b3fed8c09a
+Apr-11 14:58:21.007 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-11 14:58:21.007 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-11 14:58:21.030 [main] DEBUG nextflow.Session - Session UUID: 88e2ee29-58cc-46b4-90b1-7142505630a2
+Apr-11 14:58:21.030 [main] DEBUG nextflow.Session - Run name: exotic_franklin
+Apr-11 14:58:21.030 [main] DEBUG nextflow.Session - Executor pool size: 11
+Apr-11 14:58:21.033 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-11 14:58:21.035 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-11 14:58:26.057 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.5 build 5935
+  Created: 04-03-2025 17:55 UTC (12:55 EDT)
+  System: Mac OS X 14.3
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 22.0.1+8
+  Encoding: UTF-8 (UTF-8)
+  Process: 3115@Vedikas-MacBook-Pro.local [10.0.0.62]
+  CPUs: 11 - Mem: 18 GB (905.5 MB) - Swap: 0 (0)
+Apr-11 14:58:26.074 [main] DEBUG nextflow.Session - Work-dir: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work [Mac OS X]
+Apr-11 14:58:26.075 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/bin
+Apr-11 14:58:26.084 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-11 14:58:26.089 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-11 14:58:26.109 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-11 14:58:26.113 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 12; maxThreads: 1000
+Apr-11 14:58:26.138 [main] DEBUG nextflow.Session - Session start
+Apr-11 14:58:26.234 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-11 14:58:26.351 [main] INFO  nextflow.Nextflow - G E N O M I C S   W O R K F L O W
+================================
+reads        : null
+outdir       : results
+
+Apr-11 14:58:26.384 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2a75c60f328fcec2: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/./modules/local/spades.nf
+  Script_f937a048c4cd6ac4: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/./modules/local/fastp.nf
+  Script_6700324b540250a5: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/main.nf
+  Script_b4b117d0afef2eaf: /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/./modules/local/seqkit.nf
+Apr-11 14:58:26.384 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function isEmpty()
+Apr-11 14:58:26.400 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+
+Apr-11 14:58:26.401 [main] DEBUG nextflow.Session - 
+Thread[#9,Reference Handler,10,system]
+  java.base@22.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@22.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+  java.base@22.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+Thread[#32,AnsiLogObserver,5,main]
+  java.base@22.0.1/java.lang.Object.wait0(Native Method)
+  java.base@22.0.1/java.lang.Object.wait(Object.java:375)
+  app//nextflow.trace.AnsiLogObserver.render0(AnsiLogObserver.groovy:185)
+  java.base@22.0.1/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+  java.base@22.0.1/java.lang.invoke.LambdaForm$MH/0x00003c0001354000.invoke(LambdaForm$MH)
+  java.base@22.0.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@22.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+  java.base@22.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@22.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+  java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+
+Thread[#11,Signal Dispatcher,9,system]
+
+Thread[#19,Notification Thread,9,system]
+
+Thread[#10,Finalizer,8,system]
+  java.base@22.0.1/java.lang.Object.wait0(Native Method)
+  java.base@22.0.1/java.lang.Object.wait(Object.java:375)
+  java.base@22.0.1/java.lang.Object.wait(Object.java:348)
+  java.base@22.0.1/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+  java.base@22.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+  java.base@22.0.1/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+  java.base@22.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+Thread[#31,Thread-1,5,main]
+  java.base@22.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@22.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@22.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+  java.base@22.0.1/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515)
+  java.base@22.0.1/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:683)
+  app//nextflow.util.SimpleAgent.run(SimpleAgent.groovy:89)
+  java.base@22.0.1/java.lang.invoke.LambdaForm$DMH/0x00003c00011a9400.invokeVirtual(LambdaForm$DMH)
+  java.base@22.0.1/java.lang.invoke.LambdaForm$MH/0x00003c0001310000.invoke(LambdaForm$MH)
+  java.base@22.0.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@22.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+  java.base@22.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@22.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+  java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+
+Thread[#1,main,5,main]
+  java.base@22.0.1/java.lang.Thread.dumpThreads(Native Method)
+  java.base@22.0.1/java.lang.Thread.getAllStackTraces(Thread.java:2488)
+  app//nextflow.util.SysHelper.dumpThreads(SysHelper.groovy:188)
+  app//nextflow.Session.abort(Session.groovy:800)
+  app//nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:149)
+  app//nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+  app//nextflow.cli.Launcher.run(Launcher.groovy:503)
+  app//nextflow.cli.Launcher.main(Launcher.groovy:658)
+
+Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+  java.base@22.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@22.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@22.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+  java.base@22.0.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+  java.base@22.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+  java.base@22.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+  java.base@22.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+  java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+  java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+  java.base@22.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+Thread[#33,Actor Thread 1,5,main]
+  java.base@22.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@22.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@22.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@22.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@22.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:233)
+  java.base@22.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:316)
+  java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+  java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+
+Apr-11 14:58:26.404 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function isEmpty()
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:191)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)
+Caused by: groovy.lang.MissingMethodException: No signature of method: groovyx.gpars.dataflow.DataflowBroadcast.isEmpty() is applicable for argument types: () values: []
+Possible solutions: identity(groovy.lang.Closure), dump(), inspect(), dump()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:72)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.unwrap(IndyGuardsFiltersAndSignatures.java:163)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_6700324b540250a5$_runScript_closure1$_closure2.doCall(Script_6700324b540250a5:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	... 11 common frames omitted

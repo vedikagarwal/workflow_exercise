@@ -1,0 +1,9 @@
+- "left reads":
+  - "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/corrected/SRR1556289_1.trimmed.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/corrected/SRR1556289_2.trimmed.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/corrected/SRR1556289__unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"

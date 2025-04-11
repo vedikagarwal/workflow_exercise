@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.001     1M / 13M   WARN    General                 (memory_limit.cpp          :  53)   Failed to limit memory to 250 Gb, setrlimit(2) call failed, errno = 22 (Invalid argument). Watch your memory consumption!
+======= Warnings saved to /Users/vedikaagarwal/workflow_exercise/my_genomics_workflow_2/work/b9/e358fc1b165daf8c84e09a0368f888/spades_output/warnings.log

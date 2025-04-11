@@ -1,0 +1,99 @@
+Apr-11 15:18:11.474 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile test,conda
+Apr-11 15:18:11.519 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.5
+Apr-11 15:18:11.529 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/vedikaagarwal/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.4
+Apr-11 15:18:11.545 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-11 15:18:11.546 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-11 15:18:11.547 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-11 15:18:11.553 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-11 15:18:11.564 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/nextflow.config
+Apr-11 15:18:11.565 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/nextflow.config
+Apr-11 15:18:11.579 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/vedikaagarwal/.nextflow/secrets/store.json
+Apr-11 15:18:11.581 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@b0964b2] - activable => nextflow.secret.LocalSecretsProvider@b0964b2
+Apr-11 15:18:11.583 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test,conda`
+Apr-11 15:18:11.847 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [test, conda]
+Apr-11 15:18:11.864 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-11 15:18:11.870 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [naughty_goodall] DSL2 - revision: 28f13e7093
+Apr-11 15:18:11.871 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-11 15:18:11.871 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-11 15:18:11.893 [main] DEBUG nextflow.Session - Session UUID: 80799ff4-e561-42cf-a8f3-e3c32228411a
+Apr-11 15:18:11.893 [main] DEBUG nextflow.Session - Run name: naughty_goodall
+Apr-11 15:18:11.894 [main] DEBUG nextflow.Session - Executor pool size: 11
+Apr-11 15:18:11.897 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-11 15:18:11.899 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-11 15:18:16.922 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.5 build 5935
+  Created: 04-03-2025 17:55 UTC (12:55 EDT)
+  System: Mac OS X 14.3
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 22.0.1+8
+  Encoding: UTF-8 (UTF-8)
+  Process: 4293@Vedikas-MacBook-Pro.local [10.0.0.62]
+  CPUs: 11 - Mem: 18 GB (1023.4 MB) - Swap: 0 (0)
+Apr-11 15:18:16.939 [main] DEBUG nextflow.Session - Work-dir: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work [Mac OS X]
+Apr-11 15:18:16.939 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/bin
+Apr-11 15:18:16.948 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-11 15:18:16.953 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-11 15:18:16.974 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-11 15:18:16.978 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 12; maxThreads: 1000
+Apr-11 15:18:17.001 [main] DEBUG nextflow.Session - Session start
+Apr-11 15:18:17.085 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-11 15:18:17.201 [main] INFO  nextflow.Nextflow - GENOMICS WORKFLOW PIPELINE    
+===========================
+reads        : /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/test_data/reads/*_{1,2}.fastq.gz
+outdir       : results
+threads      : 4
+
+Apr-11 15:18:17.274 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP` matches process FASTP
+Apr-11 15:18:17.280 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Apr-11 15:18:17.280 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-11 15:18:17.283 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-11 15:18:17.285 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=11; memory=18 GB; capacity=11; pollInterval=100ms; dumpInterval=5m
+Apr-11 15:18:17.287 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-11 15:18:17.308 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPADES` matches process SPADES
+Apr-11 15:18:17.308 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Apr-11 15:18:17.309 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-11 15:18:17.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQKIT_STATS` matches process SEQKIT_STATS
+Apr-11 15:18:17.313 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Apr-11 15:18:17.313 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-11 15:18:17.314 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SPADES, SEQKIT_STATS, FASTP
+Apr-11 15:18:17.315 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Apr-11 15:18:17.317 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/test_data/reads/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
+Apr-11 15:18:17.318 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP
+Apr-11 15:18:17.318 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPADES
+Apr-11 15:18:17.318 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEQKIT_STATS
+Apr-11 15:18:17.318 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2c402c473f09ce90: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/./modules/seqkit.nf
+  Script_e6cc72567eb13827: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/./modules/fastp.nf
+  Script_72b84609e20eb7c1: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/main.nf
+  Script_a8144c90adac5fdb: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/./modules/spades.nf
+Apr-11 15:18:17.318 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-11 15:18:17.318 [main] DEBUG nextflow.Session - Session await
+Apr-11 15:18:17.363 [Actor Thread 10] INFO  nextflow.conda.CondaCache - Creating env using conda: bioconda::fastp=0.23.4 [cache /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-fdef213643f7061852dd3132792adb53]
+Apr-11 15:18:24.211 [Actor Thread 10] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=bioconda::fastp=0.23.4 path=/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-fdef213643f7061852dd3132792adb53
+Apr-11 15:18:24.232 [Task submitter] WARN  n.executor.BashWrapperBuilder - Task runtime metrics are not reported when using macOS without a container engine
+Apr-11 15:18:24.240 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-11 15:18:24.241 [Task submitter] INFO  nextflow.Session - [16/5e9960] Submitted process > FASTP (SRR1556289)
+Apr-11 15:18:33.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTP (SRR1556289); status: COMPLETED; exit: 0; error: -; workDir: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/16/5e9960e2889356745352e47c79c8af]
+Apr-11 15:18:33.977 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-11 15:18:33.993 [Actor Thread 12] INFO  nextflow.conda.CondaCache - Creating env using conda: bioconda::seqkit [cache /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-1db06cd529814045fc24b2faa3e3ed45]
+Apr-11 15:18:33.997 [Actor Thread 11] INFO  nextflow.conda.CondaCache - Creating env using conda: bioconda::spades [cache /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829]
+Apr-11 15:18:33.999 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-11 15:18:41.156 [Actor Thread 12] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=bioconda::seqkit path=/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-1db06cd529814045fc24b2faa3e3ed45
+Apr-11 15:18:41.162 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-11 15:18:41.163 [Task submitter] INFO  nextflow.Session - [39/87a602] Submitted process > SEQKIT_STATS (SRR1556289)
+Apr-11 15:18:42.864 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SEQKIT_STATS (SRR1556289); status: COMPLETED; exit: 0; error: -; workDir: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/39/87a602ed16db80a426aba03001dcac]
+Apr-11 15:18:52.353 [Actor Thread 11] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=bioconda::spades path=/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/conda/env-ec02e25dea9af3b622a9ee93f2fe9829
+Apr-11 15:18:52.358 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-11 15:18:52.359 [Task submitter] INFO  nextflow.Session - [f8/0f5d89] Submitted process > SPADES (SRR1556289)
+Apr-11 15:20:12.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SPADES (SRR1556289); status: COMPLETED; exit: 0; error: -; workDir: /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow/work/f8/0f5d89c02b193f0d5b9c15670e1f0b]
+Apr-11 15:20:12.438 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-11 15:20:12.538 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-11 15:20:12.538 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-11 15:20:12.544 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Apr-11 15:20:12.545 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Apr-11 15:20:12.550 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5m 57s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=4 GB; ]
+Apr-11 15:20:12.550 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Apr-11 15:20:13.153 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Apr-11 15:20:13.221 [main] WARN  nextflow.dag.GraphvizRenderer - Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Apr-11 15:20:13.348 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-11 15:20:13.354 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-11 15:20:13.354 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
