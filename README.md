@@ -25,17 +25,17 @@ This workflow performs the following steps:
 
 This workflow has been tested using paired-end RNA-Seq data from the 2014 Zaire ebolavirus outbreak in Sierra Leone.
 
-Accession: SRR1972739
+- Accession: SRR1972739
 
-Organism: Zaire ebolavirus
+- Organism: Zaire ebolavirus
 
-Sample: G4252.1
+- Sample: G4252.1
 
-Sequencing Platform: Illumina HiSeq 2500
+- Sequencing Platform: Illumina HiSeq 2500
 
-Study: Broad Institute, PRJNA257197 / SRP045416
+- Study: Broad Institute, PRJNA257197 / SRP045416
 
-Library Layout: Paired-end, RNA-Seq from human serum, cDNA selection
+- Library Layout: Paired-end, RNA-Seq from human serum, cDNA selection
 
 The data is stored in the following files:
 
