@@ -12,6 +12,11 @@ params.reads = "$projectDir/test_data/reads/*_{1,2}.fastq.gz"
 params.outdir = "results"
 params.threads = 4
 
+// Check if output directory exists and handle accordingly
+if (file(params.outdir).exists() && !params.overwrite) {
+    error "Output directory '${params.outdir}' already exists. Use '--overwrite true' to overwrite existing results."
+}
+
 // Log parameters
 log.info """\
          GENOMICS WORKFLOW PIPELINE    
