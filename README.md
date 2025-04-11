@@ -30,7 +30,7 @@ The repository includes test data in the `test_data/reads` directory. These are 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YourUsername/nextflow-genomics-workflow.git
+git clone git@github.com:vedikagarwal/workflow_exercise.git
 cd nextflow-genomics-workflow
 ```
 
