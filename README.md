@@ -23,14 +23,33 @@ This workflow performs the following steps:
 
 ## Test Data
 
-The repository includes test data in the `test_data/reads` directory. These are small FastQ files that can be processed quickly to demonstrate the workflow functionality.
+This workflow has been tested using paired-end RNA-Seq data from the 2014 Zaire ebolavirus outbreak in Sierra Leone.
+
+Accession: SRR1972739
+
+Organism: Zaire ebolavirus
+
+Sample: G4252.1
+
+Sequencing Platform: Illumina HiSeq 2500
+
+Study: Broad Institute, PRJNA257197 / SRP045416
+
+Library Layout: Paired-end, RNA-Seq from human serum, cDNA selection
+
+The data is stored in the following files:
+
+```bash
+test_data/reads/SRR1972739_1.fastq.gz
+test_data/reads/SRR1972739_2.fastq.gz
+```
 
 ## Quick Start
 
 ### Clone the repository
 
 ```bash
-git clone git@github.com:vedikagarwal/workflow_exercise.git
+git clone https://github.com/vedikagarwal/workflow_exercise.git
 cd nextflow-genomics-workflow
 ```
 
@@ -38,7 +57,7 @@ cd nextflow-genomics-workflow
 
 1. Install Nextflow (if not already installed):
 ```bash
-conda create -n nf -c bioconda nextflow -y
+conda create -n nf -c bioconda nextflow=24.10.5 -y
 conda activate nf
 ```
 
