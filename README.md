@@ -1,6 +1,4 @@
-# workflow_exercise
-
-## Nextflow Genomics Workflow
+# Nextflow Genomics Workflow
 
 This repository contains a Nextflow workflow for genomic analysis created for BIOL7210.
 
