@@ -1,7 +1,0 @@
-- "left reads":
-  - "/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_R1.trimmed.fastq.gz"
-  "number": !!int "1"
-  "orientation": "fr"
-  "right reads":
-  - "/Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/78/6b80591868d8fc4d4391032f21bc90/SRR1972739_R2.trimmed.fastq.gz"
-  "type": "paired-end"

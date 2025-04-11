@@ -1,5 +1,0 @@
-==> 2025-04-11 17:38:04 <==
-# cmd: /opt/anaconda3/condabin/conda create --mkdir --yes --quiet --prefix /Users/vedikaagarwal/workflow_exercise/nextflow-genomics-workflow_2/work/conda/env-1db06cd529814045fc24b2faa3e3ed45 bioconda::seqkit
-# conda version: 24.7.1
-+bioconda/osx-arm64::seqkit-2.10.0-h4f1019d_0
-# update specs: ['bioconda::seqkit']

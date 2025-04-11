@@ -7,3 +7,5 @@
 2025-04-11 15:16:00	27.6s	high_curie	ERR	28f13e70935337936bb37074802f3eae	f28175ef-c14d-42b5-88f8-cdc6877f9eed	nextflow run main.nf -profile test,conda
 2025-04-11 15:17:54	-	sad_mcclintock	-	28f13e70935337936bb37074802f3eae	f5bdb600-f222-40de-a598-c9f4f9a3a000	nextflow run main.nf -profile test,conda
 2025-04-11 15:18:16	1m 57s	naughty_goodall	OK	28f13e70935337936bb37074802f3eae	80799ff4-e561-42cf-a8f3-e3c32228411a	nextflow run main.nf -profile test,conda
+2025-04-11 16:02:37	1h 31m 57s	crazy_bernard	ERR	28f13e70935337936bb37074802f3eae	84f33618-4e93-4619-8038-8378516eede3	nextflow run main.nf -profile test,conda
+2025-04-11 17:37:42	2m 46s	adoring_torricelli	OK	28f13e70935337936bb37074802f3eae	47a3b034-5e0d-4c88-a463-34f4c030c0e0	nextflow run main.nf -profile conda,test

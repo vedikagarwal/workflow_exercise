@@ -1,1 +1,0 @@
-2025-04-11 14:01:22	1.2s	maniac_maxwell	ERR	8884d0210c91ae713325043f5fec87d5	240754fb-af0f-42f1-a3ce-cd73fc174522	nextflow run main.nf -profile conda

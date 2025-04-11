@@ -1,9 +1,0 @@
-2025-04-11 14:53:44	-	nauseous_poitras	-	71e276717ba12c7e2c49de5bcd56cd13	ef2e60cd-e446-4f55-a98e-7b411362738c	nextflow run main.nf -profile test,conda
-2025-04-11 14:54:35	10.9s	fabulous_gutenberg	ERR	49a49c505a9253d5f27b553692c1470f	852e5aca-3310-45ab-9ebf-499187ea01aa	nextflow run main.nf -profile test,conda
-2025-04-11 14:58:09	-	compassionate_mayer	-	b3fed8c09a55853450ee8de1947f4bbf	5e13e854-6a2c-4b96-937c-6b0981c6836a	nextflow run main.nf -profile test,conda
-2025-04-11 14:58:26	-	exotic_franklin	-	b3fed8c09a55853450ee8de1947f4bbf	88e2ee29-58cc-46b4-90b1-7142505630a2	nextflow run main.nf -profile test,conda
-2025-04-11 15:01:43	-	ecstatic_leakey	-	7c08ed1708f37e8d261ef423a6794770	f7930234-c204-420e-a3ca-ba4e34280652	nextflow run main.nf -profile test,conda
-2025-04-11 15:03:22	17.1s	backstabbing_kare	ERR	24c35dd6ecb0648c2b020d49ca0c8d0b	f1c37b6c-33a2-4422-a821-f406c5bf8b49	nextflow run main.nf -profile test,conda
-2025-04-11 15:05:15	-	pedantic_brenner	-	24c35dd6ecb0648c2b020d49ca0c8d0b	323a860a-9218-4c05-9e6d-a04d7bf9115f	nextflow run main.nf -profile test,conda
-2025-04-11 15:05:30	24.8s	astonishing_knuth	ERR	24c35dd6ecb0648c2b020d49ca0c8d0b	9d1b25b3-eb5e-4a69-9c77-be498b1c23f1	nextflow run main.nf -profile test,conda
-2025-04-11 15:06:47	3m 37s	stoic_wescoff	OK	24c35dd6ecb0648c2b020d49ca0c8d0b	e6d77791-7f3b-426a-8eeb-7e163b69beb9	nextflow run main.nf -profile test,conda
